@@ -31,14 +31,14 @@ contactPage.email.sendKeys("rusooedo@hotmail.com");
     }
     @When("L'utilisateur entre le numéro de téléphone.")
     public void l_utilisateur_entre_le_numéro_de_téléphone() {
-
+contactPage.telephone.sendKeys("+313515896325");
     }
     @When("L'utilisateur écrit son message dans la boîte de message.")
     public void l_utilisateur_écrit_son_message_dans_la_boîte_de_message() {
-
+contactPage.message.sendKeys("Hello, I would like to you about upcoming events");
     }
     @Then("L'utilisateur clique sur le bouton Envoyer.")
     public void l_utilisateur_clique_sur_le_bouton_envoyer() {
-
+contactPage.envoyer.click();
     }
 }
